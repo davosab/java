@@ -2,15 +2,15 @@
 Sa se citeasca de la tastatura un numar. Daca este cuprins intre 1 si 5 sa 
 se afiseze numarul respectiv dar in litere. Daca este in afara intervalului 
 sa se afiseze INVALID.
- */
+*/
 
-import java.util.*;
+import java.util.Scanner;
 
 public class P2 {
 
   public static void main(String[] args) {
 
-	List<String> nrs = List.of("UNU", "DOI", "TREI", "PATRU", "CINCI");
+	String[] nrs = {"UNU", "DOI", "TREI", "PATRU", "CINCI"};
 	Scanner myScanner = new Scanner(System.in);
 	int userNr = myScanner.nextInt();
 	
@@ -19,7 +19,7 @@ public class P2 {
 		return;
 	}
 	
-	System.out.println(nrs.get(userNr - 1));
+	System.out.println(nrs[userNr - 1]);
   }
 
 }
