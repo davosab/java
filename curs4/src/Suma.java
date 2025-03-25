@@ -5,11 +5,11 @@ public class Suma {
   }
 
   public static int suma(int a, int b, int c) {
-    return a + b + c;
+    return a + suma(b, c);
   }
 
   public static int suma(int a, int b, int c, int d) {
-    return a + b + c + d;
+    return a + suma(b, c, d);
   }
 
   public static void main(String[] args) {
