@@ -11,7 +11,7 @@ public class Piramida {
 
     for (int i = 1; i <= this.n; i++) {
       for (int j = nrOfNs; j >= 1; j--) {
-        pir += i;
+        pir += i + " ";
       }
       nrOfNs--;
       pir += "\n";
@@ -22,7 +22,7 @@ public class Piramida {
   public static void main(String[] args) {
 
     Piramida p = new Piramida(4);
-    System.out.println(p);;
+    System.out.println(p);
 
   }
 }
