@@ -6,7 +6,7 @@ public class Carte {
     this.nrPagini = nrPagini;
   }
 
-  public boolean potrivita(Carte carte) {
+  public boolean equals(Carte carte) {
     return this.nrPagini == carte.nrPagini;
   }
 
@@ -15,7 +15,7 @@ public class Carte {
     Carte carte1 = new Carte(260);
     Carte carte2 = new Carte(260);
 
-    System.out.println(carte1.potrivita(carte2));
+    System.out.println(carte1.equals(carte2));
 
   }
 }
