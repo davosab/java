@@ -5,22 +5,24 @@ public class Piramida {
     this.n = n;
   }
 
-  public void potrivita() {
+  public String toString() {
     int nrOfNs = this.n;
+    String pir = "";
 
     for (int i = 1; i <= this.n; i++) {
       for (int j = nrOfNs; j >= 1; j--) {
-        System.out.print(i);
+        pir += i;
       }
       nrOfNs--;
-      System.out.println();
+      pir += "\n";
     }
+    return pir;
   }
 
   public static void main(String[] args) {
 
     Piramida p = new Piramida(4);
-    p.potrivita();
+    System.out.println(p);;
 
   }
 }
