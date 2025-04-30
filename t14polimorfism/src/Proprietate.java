@@ -1,15 +1,11 @@
 public abstract class Proprietate {
   private String tip;
-  private String strada;
-  private int nr;
-  private String adresa;
+  private Adresa adresa;
   private int suprafata;
   private int cost;
 
   public Proprietate(String strada, int nr, int suprafata) {
-    this.strada = strada;
-    this.nr = nr;
-    this.adresa = "Strada " + strada + " Nr. " + nr;
+    this.adresa = new Adresa(strada, nr);
 
     this.suprafata = suprafata;
   }
@@ -17,16 +13,8 @@ public abstract class Proprietate {
   public String getTip() {
     return tip;
   }
-  
-  public String getStrada() {
-    return strada;
-  }
-  
-  public int getNr() {
-    return nr;
-  }
 
-  public String getAdresa() {
+  public Adresa getAdresa() {
     return adresa;
   }
 
