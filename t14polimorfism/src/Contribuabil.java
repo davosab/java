@@ -16,7 +16,7 @@ public class Contribuabil {
       sumaTotala += p.getCost();
     }
 
-    public void scrieFluturas() {
+    public String toString() {
       fluturas = 
         "Contribuabil: " + nume + "\n\n" + 
         "Proprietati \n";
@@ -24,15 +24,14 @@ public class Contribuabil {
       for (Proprietate p: proprietati) {
         fluturas += 
           "    " + (p.getTip() == "Cladire" ? "Cladire: " : "Teren:   ") + p.getAdresa() + "\n" + 
-          "             " + "Suprafata: " + p.getSuprafata() + (p.getTip() == "Teren" ? ", Rand: " + ((Teren) p).getRang() : "") + "\n" + 
+          "             " + "Suprafata: " + p.getSuprafata() + (p.getTip() == "Teren" ? ", Rang: " + ((Teren) p).getRang() : "") + "\n" + 
           "             " + "Cost: " + p.getCost() + "\n\n";
       }
 
       fluturas += 
         "Suma totala: " + sumaTotala;
 
-      System.out.println(fluturas);
+      return fluturas;
     }
 
-    
 }
