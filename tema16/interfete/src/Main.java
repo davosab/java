@@ -21,7 +21,6 @@ public class Main {
       (ContLei) client2.getContulNr("nrContLei1"), 
       100.00f
     );
-
     
   }
 
