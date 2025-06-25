@@ -11,7 +11,7 @@ public abstract class Angajat {
   }
 
   public double calculSalar() {
-    return 0;
+    return salar;
   }
 
   public double getSalar() {
